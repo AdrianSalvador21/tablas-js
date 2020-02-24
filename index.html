@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Tablas</title>
+
+    <style>
+        .title {
+            font-size: 3.5rem;
+            font-weight: 100;
+            letter-spacing: 7px;
+            color: #717171;
+            margin: 0;
+            padding: 3rem;
+            padding-bottom: 2rem;
+        }
+        
+        .container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .title-content {
+            width: 50%;
+            margin-top: 15px;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid #8080804d;
+        }
+        
+        .tables-container {
+            width: 60%;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+        
+        .load-button {
+            padding: 7px 70px;
+            margin-bottom: 15px;
+            border: 1px solid #80808000;
+            background-color: #1c97debf;
+            color: white;
+            border-radius: 5px;
+            font-size: 17px;
+        }
+        
+        .table-row {
+            cursor: pointer;
+        }
+        
+        .table-row:hover {
+            background-color: #80808026 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title-content">
+            <h2 class="title">Analytics</h2>
+
+            <button class="load-button" type="button">Load Data</button>
+        </div>
+
+        <div class="tables-container">
+            <table class="highlight centered responsive-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>RFC</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+
+                <tbody id="table-body">
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="tables-container">
+            <table class="highlight centered responsive-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>RFC</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+
+                <tbody id="table-body-signals">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
